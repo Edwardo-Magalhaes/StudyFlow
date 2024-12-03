@@ -1,0 +1,10 @@
+.planos{
+    display: flex;
+}
+
+.article{
+    border: 2px solid black;
+    margin: 12px;
+    min-width: 85%;
+    font-size: 30px;
+}

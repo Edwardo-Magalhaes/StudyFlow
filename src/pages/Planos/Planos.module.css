@@ -1,0 +1,32 @@
+.planos{
+    display: flex;
+}
+
+.article{
+    border: 2px solid black;
+    margin: 12px;
+    min-width: 85%;
+    font-size: 30px;
+}
+
+.nome{
+    border-bottom: 2px solid black;
+}
+
+.criaçao{
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.criar{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.criados{
+    border: 2px solid black;
+    min-height: 64%;
+}

@@ -1,0 +1,35 @@
+.menu{
+    border: 2px solid black;
+    /*border-radius: 20px;*/
+    width: 13%;
+    min-height: 87vh;
+    margin-left: 4px;
+    font-size: 20px;
+    background-color: var(--primary);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.icones{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.opçoes{
+    margin-left: 20%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--white)
+}
+
+.menu a:hover{
+    color: var(--contrast);
+    transform: scale(1.1);
+}
