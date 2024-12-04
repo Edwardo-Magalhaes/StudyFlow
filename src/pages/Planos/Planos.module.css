@@ -20,13 +20,175 @@
     justify-content: space-around;
 }
 
-.criar{
-    border: 2px solid black;
-    font-size: 20px;
-    padding: 20px;
+.criar {
+    display: flex; /* Alinha os itens */
+    flex-direction: column; /* Coloca o h1 e o p em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaço interno */
+    font-size: 16px; /* Define um tamanho de fonte padrão */
+    background-color: #007BFF; /* Cor de fundo */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+.criar:hover {
+    background-color: #0056b3;
 }
-
+  
 .criados{
     border: 2px solid black;
     min-height: 64%;
 }
+
+.criar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+  
+.criar:hover {
+    background-color: #0056b3;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: white;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.closeButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4136;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.closeButton:hover {
+    background-color: #c53128;
+}
+
+/* Estilos do Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.modalContent {
+    background-color: white;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+  
+h2 {
+    text-align: center;
+}
+  
+.formGroup {
+    margin-bottom: 20px;
+}
+  
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+  
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.closeButton, .saveButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.closeButton {
+    background-color: #ff4136;
+    color: white;
+    border: none;
+}
+  
+.closeButton:hover {
+    background-color: #c53128;
+}
+  
+.saveButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+  
+.saveButton:hover {
+    background-color: #218838;
+}
+  
