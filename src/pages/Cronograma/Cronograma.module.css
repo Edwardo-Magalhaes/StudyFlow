@@ -1,10 +1,24 @@
-.planos{
+.planos {
     display: flex;
-}
-
-.article{
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+  }
+  
+  .article {
     border: 2px solid black;
     margin: 12px;
-    min-width: 85%;
+    flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço restante */
     font-size: 30px;
-}
+    transition: margin-left 0.3s ease; /* Transição suave para a mudança do layout */
+  }
+  
+  .nome {
+    border-bottom: 2px solid black;
+  }
+  
+  /* Ajuste do conteúdo quando o menu estiver encolhido */
+  .menu.collapsed + .article {
+    margin-left: 10%; /* Ajusta a largura do conteúdo para 90% quando o menu for colapsado */
+  }
+  
+  /* Adicione outros estilos conforme necessário */
+  

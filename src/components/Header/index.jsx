@@ -1,23 +1,22 @@
-import styles from './Header.module.css'
+import styles from './Header.module.css';
 import { CgProfile } from "react-icons/cg";
 import { IoMdNotifications } from "react-icons/io";
-import { IoMdMenu } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 function Header() {
-    return(
+    return (
         <header className={styles.header}>
-            <Link to="/" className={styles.icone}><IoMdMenu/></Link>
-            
-            <span>StudyFlow</span>
-            <nav>
-                <div className={styles.icones}>
-                    <Link to="/" className={styles.icone}><IoMdNotifications/></Link>
-                    <Link to="/" className={styles.icone}><CgProfile/></Link>
-                </div>
+            <h1 className={styles.title}>StudyFlow</h1>
+            <nav className={styles.nav}>
+                <Link to="/" className={styles.icon}>
+                    <IoMdNotifications />
+                </Link>
+                <Link to="/" className={styles.icon}>
+                    <CgProfile />
+                </Link>
             </nav>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;
