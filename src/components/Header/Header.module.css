@@ -1,37 +1,176 @@
+:root {
+    --primary: #4a90e2;
+    --accent: #50e3c2;
+    --white: #ffffff;
+    --contrast: #ff6f61;
+    --secondary: #333333;
+}
+
+/* HEADER */
 .header {
     width: 100%;
     height: 12vh;
-    background-color: var(--primary);
+    background: linear-gradient(90deg, var(--primary), var(--accent));
     color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    border-bottom: 2px solid var(--accent); /* Mais sutil que o preto */
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionando sombra suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT SECTION */
+.leftSection {
+    flex: 1; /* Ocupa espaço proporcional na esquerda */
+    display: flex;
+    align-items: center;
 }
 
 .title {
     font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    margin: 0;
 }
 
-.nav {
+/* CENTER SECTION */
+.centerSection {
+    flex: 1; /* Ocupa espaço proporcional no centro */
     display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: center;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* NAVIGATION */
+.nav {
+    flex: 1; /* Ocupa espaço proporcional na direita */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ICON BUTTONS */
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.iconButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .icon {
     color: var(--white);
     font-size: 1.8rem;
-    transition: transform 0.3s ease, color 0.3s ease; /* Transição mais suave */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon:hover {
-    transform: scale(1.1);
-    color: var(--contrast); /* Mudança de cor ao passar o mouse */
+    transform: scale(1.2);
+    color: var(--contrast);
+}
+
+/* NOTIFICATIONS */
+.notificationWrapper {
+    position: relative;
+}
+
+.notificationsBox {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    background-color: var(--white);
+    color: var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.notificationsBox h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.notificationsBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notificationsBox li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* PROFILE MENU */
+.profileWrapper {
+    position: relative;
+}
+
+.profileMenu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    background-color: var(--white);
+    color: var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.profileMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profileMenu li {
+    font-size: 1rem;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.profileMenu li:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: var(--white);
+    text-transform: uppercase;
+    /* Removida qualquer borda desnecessária */
+    border: none; /* Certifica-se de que nenhuma borda seja aplicada */
+    margin: 0; /* Remove qualquer margem extra */
+}
+
+.header {
+    min-height: 8.1vh; /* Garante que a altura nunca será menor */
+    max-height: 8.1vh; /* Garante que a altura nunca será maior */
 }
