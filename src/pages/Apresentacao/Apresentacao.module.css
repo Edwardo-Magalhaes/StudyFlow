@@ -16,7 +16,6 @@
   padding: 0;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -56,7 +55,6 @@
   transform: scale(1.05);
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -106,7 +104,6 @@
   animation: slideIn 1.5s ease-in-out;
 }
 
-/* Benefícios Section */
 .benefits {
   text-align: center;
   padding: 50px 20px;
@@ -151,7 +148,6 @@
   margin-bottom: 10px;
 }
 
-/* Funcionalidades Extras */
 .features {
   text-align: center;
   padding: 50px 20px;
@@ -172,7 +168,6 @@
   margin-bottom: 10px;
 }
 
-/* Testimonials */
 .testimonials {
   padding: 50px 20px;
   background-color: var(--terceary);
@@ -193,7 +188,6 @@
   font-weight: bold;
 }
 
-/* Call to Action */
 .cta {
   text-align: center;
   padding: 50px 20px;
@@ -250,3 +244,42 @@
     transform: translateX(0);
   }
 }
+
+:root {
+  --primary: #4a90e2;
+  --secondary: #a8e6cf;
+  --terceary: #f5f5f5;
+  --textpri: #333333;
+  --contrast: #ff7043;
+  --white: #fff;
+}
+
+/* Adicionei estilos animados para o fundo */
+.backgroundIcons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.backgroundIcons img {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Animações */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+

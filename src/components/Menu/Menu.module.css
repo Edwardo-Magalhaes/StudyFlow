@@ -1,5 +1,5 @@
 .menu {
-  width: 14%; /* Largura padrão do menu expandido */
+  width: 14%;
   min-height: 87vh;
   background-color: var(--primary);
   border-radius: 5px;
@@ -10,11 +10,11 @@
 }
 
 .menu.collapsed {
-  width: 5%; /* Largura do menu encolhido */
+  width: 5%;
 }
 
 .menu.expanded {
-  width: 14%; /* Largura do menu expandido */
+  width: 14%;
 }
 
 .toggleButton {

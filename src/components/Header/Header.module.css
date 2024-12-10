@@ -121,7 +121,6 @@
     margin: 5px 0;
 }
 
-/* PROFILE MENU */
 .profileWrapper {
     position: relative;
 }
@@ -165,12 +164,11 @@
     letter-spacing: 1.2px;
     color: var(--white);
     text-transform: uppercase;
-    /* Removida qualquer borda desnecessária */
-    border: none; /* Certifica-se de que nenhuma borda seja aplicada */
-    margin: 0; /* Remove qualquer margem extra */
+    border: none;
+    margin: 0;
 }
 
 .header {
-    min-height: 8.1vh; /* Garante que a altura nunca será menor */
-    max-height: 8.1vh; /* Garante que a altura nunca será maior */
+    min-height: 8.1vh;
+    max-height: 8.1vh;
 }

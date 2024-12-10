@@ -44,7 +44,7 @@ const Apresentacao = () => {
       <section className={styles.benefits}>
         <h2>Por que escolher o StudyFlow?</h2>
         <div className={styles.cards}>
-          <div className={`${styles.card} ${styles.animateCard}`}>
+          <div className={styles.card}>
             <img
               src="https://via.placeholder.com/150"
               alt="Planejamento Personalizado"
@@ -52,12 +52,12 @@ const Apresentacao = () => {
             <h3>Planejamento Personalizado</h3>
             <p>Adapte seu cronograma às suas metas e prioridades.</p>
           </div>
-          <div className={`${styles.card} ${styles.animateCard}`}>
+          <div className={styles.card}>
             <img src="https://via.placeholder.com/150" alt="Produtividade" />
             <h3>Produtividade Máxima</h3>
             <p>Organize seu tempo e alcance um novo nível de desempenho.</p>
           </div>
-          <div className={`${styles.card} ${styles.animateCard}`}>
+          <div className={styles.card}>
             <img
               src="https://via.placeholder.com/150"
               alt="Acompanhamento de Resultados"
