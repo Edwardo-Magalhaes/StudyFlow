@@ -39,23 +39,28 @@ const AuthPage = () => {
             </p>
           </>
         ) : (
-          <>
+        <>
             <h2>Registro</h2>
-            <form className={styles.authForm}>
-              <input type="text" placeholder="Nome Completo" required />
-              <input type="text" placeholder="Apelido" required />
-              <input type="date" placeholder="Data de Nascimento" required />
-              <input type="password" placeholder="Senha" required />
-              <input type="password" placeholder="Repita a Senha" required />
-              <button className={styles.authButton} type="submit">Registrar</button>
+            <form
+                className={styles.authForm}
+                action="http://localhost/auth_backend.php" // Caminho para o seu script PHP
+                method="POST"
+            >
+                <input type="text" name="full_name" placeholder="Nome Completo" required />
+                <input type="text" name="username" placeholder="Apelido" required />
+                <input type="email" name="email" placeholder="E-mail" required />
+                <input type="date" name="birth_date" placeholder="Data de Nascimento" required />
+                <input type="password" name="password" placeholder="Senha" required />
+                <input type="hidden" name="register" value="1" /> {/* Identifica que é um registro */}
+                <button className={styles.authButton} type="submit">Registrar</button>
             </form>
             <p>
-              Já tem conta?{" "}
-              <button className={styles.toggleLink} onClick={toggleForm}>
-                Entre
-              </button>
+                Já tem conta?{" "}
+                <button className={styles.toggleLink} onClick={toggleForm}>
+                    Entre
+                </button>
             </p>
-          </>
+        </>
         )}
       </div>
     </div>
